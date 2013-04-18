@@ -20,11 +20,16 @@
 
 	`emulator @<name>`
 
+### Notes:
+* Intels provides HAX (Hardware Accelerated Execution), this lets the Android VM be hardware accelerated making it faster
+* 10.6 and 10.7 users follow these [instructions][4]
+* 10.8 should check out the hotfix found [here][5]
+
 ## On Linux 
 
 This should be pretty similar to OSX.
 
-Notes:
+### Notes:
 
 * For Ubuntu, you can `apt-get install android-tools-adb` but you will still need the SDK Manager. So getting it all from the [android developper hub][2] should be simpler (and insure your version is up to date).
 
@@ -32,3 +37,5 @@ Notes:
 [1]: http://mxcl.github.io/homebrew/ "brew"
 [2]: https://developer.android.com/sdk/index.html "android dev hub"
 [3]: https://developer.android.com/tools/help/sdk-manager.html "SDK Manager"
+[4]: http://software.intel.com/en-us/articles/installation-instructions-for-intel-hardware-accelerated-execution-manager-macosx "HAX"
+[5]: http://software.intel.com/en-us/articles/intel-hardware-accelerated-execution-manager/ "HAX 10.8"

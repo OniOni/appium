@@ -21,7 +21,7 @@
 	`emulator @<name>`
 
 ### Notes:
-* Intels provides HAX (Hardware Accelerated Execution), this lets the Android VM be hardware accelerated making it faster
+* Intel provides HAX (Hardware Accelerated Execution), this lets the Android VM be hardware accelerated making it faster
 * 10.6 and 10.7 users follow these [instructions][4]
 * 10.8 should check out the hotfix found [here][5]
 

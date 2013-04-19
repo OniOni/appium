@@ -172,6 +172,36 @@ describeWd('xpath', function(h) {
       });
     });
   });
+  it('should find the last element', function(done) {
+    h.driver.elementByXPath("//text[last()]", function(err, el) {
+      should.not.exist(err);
+      el.text(function(err, text) {
+        should.not.exist(err);
+        text.should.eql("Text");
+        done();
+      });
+    });
+  });
+  it('should find element by xpath index and child', function(done) {
+    h.driver.elementByXPath("//frame[1]/frame[1]/list[1]/text[3]", function(err, el) {
+      should.not.exist(err);
+      el.text(function(err, text) {
+        should.not.exist(err);
+        text.should.eql("App");
+        done();
+      });
+    });
+  });
+  it('should find element by index and embedded desc', function(done) {
+    h.driver.elementByXPath("//frame/frame[1]//text[3]", function(err, el) {
+      should.not.exist(err);
+      el.text(function(err, text) {
+        should.not.exist(err);
+        text.should.eql("App");
+        done();
+      });
+    });
+  });
 });
 
 describeWd('unallowed tag names', function(h) {
